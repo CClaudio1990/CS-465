@@ -14,7 +14,7 @@ mongoose.connection.on('connected', () => {
     console.log(`Mongoose connected to ${dbURI}`);
 });
 
-mongoose.connection.on('connected', err => {
+mongoose.connection.on('error', err => {
     console.log('Mongoose connection error: ', err);
 });
 

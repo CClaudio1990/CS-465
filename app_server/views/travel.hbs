@@ -8,7 +8,6 @@
 </head>
 <body>
     {{> header}}
-
     <div id="background">
         <div id="page">
             <div id="contents">
@@ -19,9 +18,8 @@
                             <ul id="sites">
                                 {{#each trips}}
                                 <li>
-                                    <a href="/api/trips/{{this.code}}"><img src="images/{{this.image}}" alt="Img"></a>
-                                    <h2><a href="/travel">{{this.name}}</a></h2>
-
+                                    <a href="/api/trips/{{this.code}}"><img src="images/{{this.image}}" alt="{{this.name}}"></a>
+                                    <h2><a href="/trips/{{this.code}}">{{this.name}}</a></h2>
                                         {{{this.description}}}
                                 </li>
                                 {{/each}}
@@ -32,7 +30,6 @@
             </div>
         </div>
     </div>
-
     {{> footer}}
 </body>
 </html>
