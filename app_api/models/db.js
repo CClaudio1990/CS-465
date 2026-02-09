@@ -33,6 +33,13 @@ if(process.platform == 'win32'){
     });
 }
 
+// Configure for Graceful Shutdown
+const gracefulShutdown = (msg) => {
+    mongoose.connection.close(() => {
+        console.log(`Mongoose disconnected through ${msg}`);
+    });
+};
+
 // Event Listeners to process graceful shutdowns
 // Shutdown invoked by nodemon signal
 process.once('SIGUSR2', () => {
