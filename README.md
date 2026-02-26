@@ -10,7 +10,7 @@
 
 **How is JSON different from Javascript and how does JSON tie together the frontend and backend development pieces?**
     
-    * JSON is a data format, not a programming language like JavaScript is. JSON ties the frontend and backend together by being the medium to store and transmit the data between layers. Specifically, JSON is like a universal language spoken by both the front and back ends. The frontend parses the JSON data coning from the backend when it recieves the data it requests.
+* JSON is a data format, not a programming language like JavaScript is. JSON ties the frontend and backend together by being the medium to store and transmit the data between layers. Specifically, JSON is like a universal language spoken by both the front and back ends. The frontend parses the JSON data coning from the backend when it recieves the data it requests.
 
 **Provide instances in the full stack process when you refactored code to improve functionality and efficiencies, and name the benefits that come from reusable user interface (UI) components.**
 
