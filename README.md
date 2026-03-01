@@ -3,11 +3,15 @@
 # Architecture
 
 **Compare and contrast the types of frontend development you used in your full stack project, including Express HTML, JavaScript, and the single-page application (SPA).**
+
 * The **Travlr Getaways** project utilized Angular architecture and Express for the frontend:
+    
     * **Single-Page Application (Angular):** The admin website was created using Angular as the frontend. An SPA provides a dynamic and fluid experience for the end user by providing fast loading content given that there are not multiple page to render. Each "page" is just a component of the main page and is mostly handled at the browser level (Client-Side).
+
     * **Express:** For the customer facing UI, we used the express architecture with Handlebars Services (HBS) to render dynamic content. Much of the load is on the backend (Server-Side) using Express.
 
 **Why did the backend use a NoSQL MongoDB database?**
+
 * The reasons behind the use of a NoSQL database include: flexible schemas, horizontal scalability and development efficiency. MongoDB stores data in a format that is much like the JavaScript/TypeScript components in the application code. This means that development can be faster and the database can be scaled without the need for more expensive equipment. You can scale it through smaller, less expensive servers.
 
 # Functionality
@@ -41,7 +45,13 @@ Testing the application was vital. Every major change made meant testing needed 
 
 * testing the security layer was accomplished through both Postman and jwt.io to validate tokens. This ensured that invalid or expired tokens were rejected by the application when attempting to login.
 
+**Methods, Endpoints, Security:**
 
+* **Methods:** GET, POST, PUSH, PUT are the HTTP methods that define how the frontend interacts with the MongoDB Database.
+
+* **API Endpoints:** API Endpoints ('/api/trips') are defined for data to be changed, viewed and created.
+
+* **Authentication:** JWT authentication ensures that only admin users could access and manipulate trips.
 
 # Reflection
 
