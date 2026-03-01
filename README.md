@@ -8,6 +8,7 @@
     * **Express:** For the customer facing UI, we used the express architecture with Handlebars Services (HBS) to render dynamic content. Much of the load is on the backend (Server-Side) using Express.
 
 **Why did the backend use a NoSQL MongoDB database?**
+* The reasons behind the use of a NoSQL database include: flexible schemas, horizontal scalability and development efficiency. MongoDB stores data in a format that is much like the JavaScript/TypeScript components in the application code. This means that development can be faster and the database can be scaled without the need for more expensive equipment. You can scale it through smaller, less expensive servers.
 
 # Functionality
 
@@ -25,6 +26,13 @@
 # Testing
 
 **Methods for request and retrieval necessitate various types of API testing of endpoints, in addition to the difficulties of testing with added layers of security. Explain your understanding of methods, endpoints, and security in a full stack application.**
+Testing the application was vital. Every major change made meant testing needed to be done to ensure it was working:
+**Frontend:**
+* The Express and Angular components were tested consistently by manually testing data changes/requests through Postman to ensure that the backend server recieves them. For the frontend admin site, testing was performed to ensure that adding and editing trips was based conditionally on Authentication through JWT.
+**Backend:**
+* Postman was primarily used to test that the frontend requests were reaching the database. From Postman, we could see errors and troubleshoot from there.
+**Security:**
+* testing the security layer was accomplished through both Postman and jwt.io to validate tokens. This ensured that invalid or expired tokens were rejected by the application when attempting to login.
 
 # Reflection
 
