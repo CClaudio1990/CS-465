@@ -56,3 +56,5 @@ Testing the application was vital. Every major change made meant testing needed 
 # Reflection
 
 **How has this course helped you in reaching your professional goals? What skills have you learned, developed, or mastered in this course to help you become a more marketable candidate in your career field?**
+
+This course has broadened my understanding of how websites are developed. I was able to learn and become relatively proficient in implementing authentication and using tools like Postman and MongoDB. I built a stronger understanding of how the frontend and backend interact with each other. I feel that overall, I have gained skills through using programming languages I previously had limited exposure to and concepts that make me a stronger candidtate in the market.
